@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BigPlanetarium | Solar System</title>
+
+  <link rel="stylesheet" href="css/planets.css" />
+</head>
+
+<body class="planets-page">
+<audio id="bg-audio" autoplay loop>
+  <source src="audio/space-ambience.mp3" type="audio/mpeg">
+</audio>
+
+<p id="audio-status" style="position:fixed; bottom:20px; left:20px; color:white; font-size:12px;"></p>
+  <!-- NAVBAR -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="index.html" class="logo">BIGPLANETARIUM</a>
+
+      <nav class="nav-center">
+        <a href="milkyway.html">Milky Way</a>
+        <a href="planets.html">Planets</a>
+        <a href="learning.html">Learning</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="solar-hero">
+    <div class="container solar-hero-content">
+
+      <p class="hero-small-text">
+        Join us as we explore our solar system.
+      </p>
+
+      <div class="solar-stats">
+        <div class="stat-box">
+          <span class="stat-number">08</span>
+          <span class="stat-label">Planets</span>
+        </div>
+
+        <div class="stat-box">
+          <span class="stat-number">05</span>
+          <span class="stat-label">Dwarf Planets</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FACTS SLIDER -->
+  <section class="things-strip">
+    <div class="container">
+
+      <div class="facts-header">
+        <p class="strip-label">10 THINGS ABOUT OUR SOLAR SYSTEM</p>
+
+        <div class="slider-controls">
+          <button id="leftBtn">&#8592;</button>
+          <button id="rightBtn">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="things-scroll" id="thingsScroll">
+
+        <!-- 1 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT1.PNG">
+          <div>
+            <h3>1. The Sun holds almost everything</h3>
+            <p>About 99.8% of the Solar System’s mass is in the Sun!</p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT2.PNG">
+          <div>
+            <h3>2. Earth isn’t perfectly round</h3>
+            <p>Earth is slightly squished at the poles and bulges at the equator.</p>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT3.PNG">
+          <div>
+            <h3>3. Venus is hotter than Mercury</h3>
+            <p>Venus is hotter because of its thick atmosphere trapping heat.</p>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT4.PNG">
+          <div>
+            <h3>4. Jupiter has a giant storm</h3>
+            <p>The Great Red Spot is a storm bigger than Earth.</p>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT5.PNG">
+          <div>
+            <h3>5. Saturn could float</h3>
+            <p>Saturn has very low density.</p>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT6.PNG">
+          <div>
+            <h3>6. Uranus spins sideways</h3>
+            <p>Extreme tilt rotation.</p>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT7.PNG">
+          <div>
+            <h3>7. Neptune fastest winds</h3>
+            <p>Up to 2000 km/h.</p>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT8.PNG">
+          <div>
+            <h3>8. Moon moving away</h3>
+            <p>3.8 cm yearly.</p>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT9.PNG">
+          <div>
+            <h3>9. Millions of asteroids</h3>
+            <p>Asteroid belt region.</p>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="thing-card">
+          <img src="images/solarsystemfact/FACT10.PNG">
+          <div>
+            <h3>10. Solar System is huge</h3>
+            <p>Voyager took 40+ years.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="solar-main">
+    <div class="container">
+
+      <!-- TABS -->
+      <div class="tab-bar">
+        <button class="tab-btn active" data-tab="facts">Solar System Facts</button>
+        <button class="tab-btn" data-tab="planets">Planets</button>
+      </div>
+
+      <!-- FACTS -->
+      <section id="facts" class="tab-content active">
+        <div class="content-text">
+
+          <h1>Solar System Facts</h1>
+
+          <p class="bold-text">
+            Our solar system includes the Sun, eight planets, five officially named dwarf planets,
+            hundreds of moons, and thousands of asteroids and comets.
+          </p>
+
+          <p>
+            Our solar system is located in the Milky Way galaxy in the Orion Arm.
+          </p>
+
+          <p>
+            It takes about 230 million years to orbit the galaxy.
+          </p>
+
+          <a href="learning.html" class="explore-link">
+            Learn More <span>+</span>
+          </a>
+
+        </div>
+
+        <div class="content-image">
+          <img src="images/BGSOLARSYSTEM.webp" alt="Solar system">
+        </div>
+      </section>
+
+      <!-- PLANETS TAB -->
+      <section id="planets" class="tab-content">
+        <div class="content-text">
+
+          <h1>About the Planets</h1>
+
+          <p class="bold-text">
+            Learn about the inner planets, outer planets, and dwarf planets.
+          </p>
+
+          <a href="explore-planets.html" class="explore-link">
+            Explore the Planets <span>+</span>
+          </a>
+
+        </div>
+
+        <div class="content-image">
+          <img src="images/PLANETS.webp" alt="Planets">
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script>
+    const scrollContainer = document.getElementById("thingsScroll");
+    const leftBtn = document.getElementById("leftBtn");
+    const rightBtn = document.getElementById("rightBtn");
+
+    rightBtn.onclick = () => {
+      scrollContainer.scrollBy({ left: 350, behavior: "smooth" });
+    };
+
+    leftBtn.onclick = () => {
+      scrollContainer.scrollBy({ left: -350, behavior: "smooth" });
+    };
+
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(btn => {
+      btn.onclick = () => {
+        tabs.forEach(b => b.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+      };
+    });
+  </script>
+
+</body>
+</html>

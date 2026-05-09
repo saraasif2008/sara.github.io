@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BigPlanetarium | Explore the Milky Way</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- BACKGROUND AUDIO -->
+  <audio id="bg-audio" autoplay loop>
+    <source src="audio/space-ambience.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- NAVBAR -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+
+      <a href="index.html" class="logo">
+        BIGPLANETARIUM
+      </a>
+
+      <nav class="nav-center">
+        <a href="milkyway.html">Milky Way</a>
+        <a href="planets.html">Planets</a>
+        <a href="learning.html">Learning</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="hero">
+
+    <div class="container hero-grid">
+
+      <!-- LEFT TEXT -->
+      <section class="hero-text">
+
+        <div class="accent-line"></div>
+
+        <h1 class="hero-title">
+          <span class="top">Explore</span>
+          <span class="bottom">The Milky Way</span>
+        </h1>
+
+        <p class="hero-subtext">
+          Discover our galaxy, learn about the planets,
+          and explore space in a fun and interactive way.
+        </p>
+
+        <div class="hero-actions">
+          <a href="milkyway.html" class="primary-btn">
+            Explore Galaxy
+          </a>
+
+          <a href="planets.html" class="secondary-btn">
+            View Planets
+          </a>
+        </div>
+
+      </section>
+
+      <!-- RIGHT VISUAL -->
+      <section class="hero-visual">
+
+        <div class="glow orange"></div>
+        <div class="glow blue"></div>
+
+        <img
+          src="images/BIGMOON.png"
+          alt="Large Moon"
+          class="moon"
+        />
+
+        <img
+          src="images/FLYINGASTRAUNAUT.png"
+          alt="Astronaut"
+          class="astronaut"
+        />
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- AUDIO STATUS -->
+  <div class="audio-status" id="audio-status">
+    Trying to play background audio...
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
